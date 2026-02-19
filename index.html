@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Stones</title>
+  <link rel="stylesheet" href="https://use.typekit.net/adz5mcc.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="is-home">
+
+<div class="big" id="bigContainer">
+  <div id="dragCircle" class="drag-circle">
+    <div class="circle-content">
+      <p>Hey! This site is for anyone hitting NYC for the first time or just feeling a bit lost in the Manhattan maze. Each stone here represents an iconic spot in the city. I wanted to build this so you can just wander around, click things, and get a feel for the island at your own pace. Have fun exploring!</p>
+    </div>
+  </div>
+
+  <div class="top" id="topArea">
+    <div class="tt">
+      <a href="unionsq-stone.html">Union Square</a>
+      <a href="soho-stone.html">SoHo</a>
+      <a href="centralpark-stone.html">Central Park</a>
+      <a href="chinatown-stone.html">Chinatown</a>
+      <a href="hudsonyards-stone.html">Hudson Yards</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="bot" id="mainTrail">
+    <svg id="trailLines" class="trailSvg"></svg>
+    <a class="rock rock1" data-stone="unionsq" href="unionsq.html" onclick="return goStone(this)"></a>
+    <a class="rock rock2" data-stone="soho" href="soho.html" onclick="return goStone(this)"></a>
+    <a class="rock rock3" data-stone="centralpark" href="centralpark.html" onclick="return goStone(this)"></a>
+    <a class="rock rock4" data-stone="chinatown" href="chinatown.html" onclick="return goStone(this)"></a>
+    <a class="rock rock5" data-stone="hudsonyards" href="hudsonyards.html" onclick="return goStone(this)"></a>
+
+    <div class="tip">Click any stone to explore the city trail</div>
+    <button class="clearBtn" onclick="clearAll()">Clear</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
